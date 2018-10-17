@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML PROJECT : RECREATE SIMPLE LANDING PAGE</title>
+
+    <style>
+
+        	* {
+	padding: 0;
+	margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+	font-family:  serif;
+	font-size: 20px;
+
+}
+
+
+
+.photo{
+  background-image:url("meriem.jpg");
+ 
+ background-repeat:no-repeat;
+ background-size: contain;
+ width:300px;
+ height:300px;
+ border-radius: 50%;
+
+}
+
+.css{
+    background-image:url("css.png");
+ 
+ background-repeat:no-repeat;
+ background-size: cover;
+ width:200px;
+ height:200px;
+ border-radius: 50%;
+}
+
+.js{
+    background-image:url("js.png");
+ 
+ background-repeat:no-repeat;
+ background-size: cover;
+ width:200px;
+ height:200px;
+ border-radius: 50%;
+
+}
+
+
+.html{
+    background-image:url("html.png");
+ 
+ background-repeat:no-repeat;
+ background-size: cover;
+ width:200px;
+ height:200px;
+ border-radius: 50%;
+
+}
+
+.landbot{
+    background-image:url("landbot.jpg");
+ 
+ background-repeat:no-repeat;
+ background-size: cover;
+ width:298px;
+ height:200px;
+ 
+}
+
+.meriem-grand{
+    background-image:url("meriem-grand.jpg");
+ 
+ background-repeat:no-repeat;
+ background-size: cover;
+
+ height:400px;
+
+
+}
+
+.wistia{
+    background-image:url("wistia.jpg");
+ 
+ background-repeat:no-repeat;
+ background-size: cover;
+ width:298px;
+ height:200px;
+
+}
+
+.doc{
+    background-image:url("doc.jpg");
+ 
+ background-repeat:no-repeat;
+ background-size: cover;
+ width:298px;
+ height:200px;
+ 
+}
+
+main{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+
+}
+
+.info{
+    
+   
+
+}
+
+.about{
+   background-color: #212226;
+}
+.porjets{
+    background-color: #212226;
+}
+.bold{
+    font-weight: bold;
+    
+}
+
+.skill{
+
+   background-color: #212226;
+   
+    
+   
+}
+
+
+.projt-block{
+  border-radius: 6px ;
+  border: 1px solid rgba(0,0,0,.03);
+  color:#747474;
+  
+  
+}
+.projet-img{
+  border-radius:6px 6px 0 0;
+  
+}
+  
+.projet-blocks{
+  display:flex;
+  justify-content:space-between;
+  flex-wrap: wrap;
+  margin-top:40px;
+}
+
+.projet-block-buttom{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px;
+}
+.projet-button{
+  background-color:#3d83df;
+  border-radius:4px;
+  border: 1px solid #3d83df;
+  font-weight:700;
+  width:100px;
+  height:30px;
+  color:#fff;
+  
+}
+.projet-titre{
+  font-weight: 400;
+}
+.projet-block:hover{
+  box-shadow: 0 20px 50px 0 rgba(0,0,0,.13);
+  
+}
+
+
+.author{
+    color:#fff;
+    padding:20px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.text{
+    color:#fff;
+    padding:20px;
+    font-size: 13px;
+    font-family: sans-serif;
+}
+.text2{
+    color:#fff;
+    
+    font-size: 19px;
+    font-family: sans-serif;
+}
+.skill-icon{
+    margin-top: 20px;
+}
+
+.projet-icon{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+@media screen and (max-width: 600px) {
+    .skill-icon{
+    margin-left:auto;
+    margin-right: auto;
+}
+}
+
+
+    .dot {
+  height: 15px;
+  width: 15px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot-activ{
+    height: 15px;
+  width: 15px;
+  background-color: #3ea9f5;
+  border-radius: 50%;
+  display: inline-block;
+}
+  
+.level{
+    padding:20px;
+}
+
+.invisible{
+    background-color:  #212226;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,900,700,600,500,300,200,100,800);
+
+
+
+.blog-titre {
+    color: #212226;
+    word-spacing: 5px;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom:30px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.ion-minus{
+    padding:0px 10px;
+}
+
+.blog{
+	background-color:#f6f6f6;
+    
+   
+
+    ;
+}
+
+.blog .card {
+    background-color: #212226;
+    border: 1px solid #212226;
+    margin: 20px 0px;
+    width: 300px;
+}
+
+.blog .card-block {
+    padding: 15px;
+}
+
+.btn.btn-default {
+    background-color: #fff;
+    color: #212226;;
+    border-radius: 0;
+    border: none;
+    padding: 13px 20px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+        </style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+       
+<main class="container">
+         
+            <section class="about">
+            <div class="post row" id="post1">
+                    <div class="caption col-md-4">
+                        <div class="author">
+                            
+                            <div class="nom-prenom bold">Meriem Abdelmoumen</div>
+                            <div class="meta bold"> Full stack javascript</div>
+                        </div> 
+                        <div class="text">
+                            <p>Mon parcours universitaire a débuté à l’ISG où j’ai obtenu une licence en Informatique de Gestion et un mastère en Informatique de décision. 
+                                    Aujourd'hui je me suis inscrit dans le Developer Program de GoMyCode pour devenir développeuse web et rejoindre une entreprise informatique. Je suis en train d'apprendre le Fullstack Javascript, un langage de programmation très demandé par les entreprises. 
+                                    Je rêve d'un seul truc aujourd'hui, devenir une super développeuse web et je suis sur que je vais atteindre cet objectif très bientôt !</p>
+                        </div>
+                    </div><!-- / .caption -->
+                    
+                    <div class="content col-md-8">
+                        <div class="meriem-grand"></div>
+                    </div><!-- / .content -->
+                </div>
+            </section>
+
+
+
+<section>
+<div class="blog">
+        <div class="container">
+             
+              <div class="row">
+                   <div class="col-lg-6 col-lg-offset-3 text-center">  
+                      <h2 class="blog-titre"><span class="ion-minus"></span>Mes Réalisations<span class="ion-minus"></span></h2>
+                     </div> 
+              </div>  
+                  
+             <div class="row">
+             
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" data-aos="fade-right">
+                       <div class="card text-center">
+                        <div class="landbot"></div>  
+                        <div class="card-block">
+                             
+                              <a class="btn btn-default" href="#">LANDBOT</a>
+                          </div>
+                       </div>
+                  </div>
+                  
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" data-aos="fade-up">
+                       <div class="card text-center">
+                            <div class="wistia"></div>   
+                        <div class="card-block">
+                             
+                             <a class="btn btn-default" href="#">WISTIA</a>
+                          </div>
+                       </div>
+                  </div>
+                  
+                   <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" data-aos="fade-left">
+                       <div class="card text-center">
+                            <div class="doc"></div>   
+                        <div class="card-block">
+                              <h4 class="card-title"></h4>
+                              <a class="btn btn-default" href="#">DOC PLANNER</a>
+                          </div>
+                       </div>
+                  </div>
+                  
+              </div>
+              
+      </div>
+  </div>
+</section>
+
+
+  <section class="  skill ">
+   
+        <div class="post row" id="post1">
+                <div class="caption col-md-4">
+                    <div class="author">
+                        
+                        <div class=" bold">Skills</div>
+    
+                        <div class="level ">
+                            <div class="text2">
+                                <span>HTML</span>
+                                    <span class="dot-activ"></span>
+                                    <span class="dot-activ"></span>
+                                    <span class="dot-activ"></span>
+                                    <span class="dot-activ"></span>
+                                    <span class="dot"></span>
+                            </div>
+                        <div class=" text2">
+                                <span>CSS</span><span class="invisible">S</span>
+                                    <span class="dot-activ"></span>
+                                    <span class="dot-activ"></span>
+                                    <span class="dot-activ"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                            </div>
+    
+    
+                            <div class=" text2">
+                                    <span>JS</span><span class="invisible">ML</span>
+                                        <span class="dot-activ"></span>
+                                        <span class="dot-activ"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                </div>
+                                </div>
+                       
+                    </div> 
+                    <div class="text">
+                        <p> </p>
+                    </div>
+                </div><!-- / .caption -->
+                
+                <div class="content col-md-8">
+                        <div class="col-md-2 skill-icon"><div class="css "></div></div>
+                        <div class="col-md-2 "></div>
+                        <div class="col-md-2 skill-icon"> <div class="js "></div></div>
+                        <div class="col-md-2"></div>
+                        <div class="col-md-2 skill-icon"><div class="html "></div></div>
+                </div><!-- / .content -->
+            </div>
+       
+    
+    
+    </section>
+
+    
+
+
+</main>
+
+</body>
+
+
