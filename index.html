@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML PROJECT : RECREATE SIMPLE LANDING PAGE</title>
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+   
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <style>
 
         	* {
@@ -27,8 +29,8 @@ body {
  
  background-repeat:no-repeat;
  background-size: contain;
- width:300px;
- height:300px;
+ width:100px;
+ height:100px;
  border-radius: 50%;
 
 }
@@ -83,6 +85,8 @@ body {
  background-size: cover;
 
  height:400px;
+ 
+
 
 
 }
@@ -106,12 +110,30 @@ body {
  height:200px;
  
 }
+.contact-img{
+    background-image:url("contact.jpg");
+ 
+ background-repeat:no-repeat;
+ background-size: contain;
+ width:250px;
+ height:250px;
+} 
 
 main{
     padding-top: 30px;
     padding-bottom: 30px;
     
 
+}
+
+.test{
+   
+    background-color:#fff;
+    
+   
+    height: 100%;
+    display: none;
+ 
 }
 
 .info{
@@ -290,11 +312,87 @@ main{
     font-weight: 600;
     margin-top: 10px;
 }
+.line{
+    border-top: 1px solid #0e0e0e;
+     width: 50%;
+     text-align: center;
+     padding-top: 0px;}
 
+ .test-titre {
+    padding-top:10px;
+    font-size:15px;
+    font-weight: bold
+    
+ } 
+.circle {
+  width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  font-size: 20px;
+  
+  border-radius: 25px;
+  border: 0px solid transparent;
+  margin-left:50%;
+  margin-right: 50% ;
+  outline: none;
+ 
+} 
+.btn-contact{
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    
+
+    
+}
+
+
+
+
+.text-plus{
+    display: none
+}
+
+
+.modal-title{
+    text-align: center
+}
+
+.modal-header{
+    background-color:  #17A2B8;
+    color:beige;
+}
+.modal-content{
+    border-color: #17A2B8;
+    border-style: solid;
+    border-width: 5px;
+}
+
+.form{
+    width: 200px;
+}
+
+.modal-sous-titre{
+    color: #17A2B8;
+   padding: 36px 0;
+}
+    
+.photo-info{
+    display: flex;
+    
+    align-items:center; 
+    color: #17A2B8;
+} 
+  
+.icon-contact{
+    color: #17A2B8;
+} 
+
+    
+    
         </style>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -312,19 +410,76 @@ main{
                             <div class="meta bold"> Full stack javascript</div>
                         </div> 
                         <div class="text">
-                            <p>Mon parcours universitaire a débuté à l’ISG où j’ai obtenu une licence en Informatique de Gestion et un mastère en Informatique de décision. 
+                            <p>Mon parcours universitaire a débuté à l’ISG où j’ai obtenu une licence en Informatique de Gestion<span class="text-point">...</span><span class="text-plus"> et un mastère en Informatique de décision. 
                                     Aujourd'hui je me suis inscrit dans le Developer Program de GoMyCode pour devenir développeuse web et rejoindre une entreprise informatique. Je suis en train d'apprendre le Fullstack Javascript, un langage de programmation très demandé par les entreprises. 
-                                    Je rêve d'un seul truc aujourd'hui, devenir une super développeuse web et je suis sur que je vais atteindre cet objectif très bientôt !</p>
-                        </div>
+                                    Je rêve d'un seul truc aujourd'hui, devenir une super développeuse web et je suis sur que je vais atteindre cet objectif très bientôt !</span></p>
+                                    <button type="button" class=" btn-info circle ">+</button>
+                                </div>
                     </div><!-- / .caption -->
                     
                     <div class="content col-md-8">
-                        <div class="meriem-grand"></div>
+                        <div class="meriem-grand image-profil"><button data-toggle="modal" data-target="#myModal" class= "btn btn-info btn-contact"> Me contacter</button></div>
                     </div><!-- / .content -->
                 </div>
             </section>
 
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+                
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <div class="modal-title"> 
+                        <h3><i class="fa fa-envelope"></i> Me contacter</h3>
+                        <p class="m-0">&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Meriem Abdelmoumen</p>
+                      </div>
+                    </div>
+                    <div class="modal-body row">
+                        <form class="form col-md-6" method="post">
 
+                            <h4 class="modal-sous-titre" > Envoyer un message</h4>
+                            <hr>
+                        
+                            <div class="form-group">
+                                <h6 class="titre"> name: </h6>
+                                <input id="first-name" type="text" class="form-control control-item">
+                                <span class="valid-span" id="valid-first-name"></span>
+                            </div>
+                            <div class="form-group">
+                                <h6 class="titre">Mail:</h6>
+                                    <input id="mail" type="text" class="form-control control-item" >
+                                        <span class="valid-span" id="valid-mail"></span>
+                                    </div>
+                            
+                            <div class="form-group">
+                                 <h6 class="titre">Message:</h6>
+                                    <textarea id="comment" class="form-control control-item" rows="3" ></textarea>
+                                    </div>
+
+                            <div class="form-group button-groupe">
+                                        <button type="button" id="send"   class="form-control button-control"  ><i class="fa fa-mail-forward icon-contact"></i> &nbsp; Envoyer</button>
+                                        <button  id="rest" type="button" class="form-control button-control" value="Vider" ><i class="fa fa-remove icon-contact"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vider</button>
+                                </div>
+
+                        </form>
+                      <div class="contact-info col-md-6">
+                          <div class="photo-info"><div class="photo"></div><h4>&nbsp; &nbsp;&nbsp;Info</h4></div>
+                          <hr>
+                          <h5 ><i class="fa fa-home fa-1x icon-contact"></i> &nbsp; &nbsp;Tunis Manar I</h5> 
+                          <h5 ><i class="fa fa-envelope fa-1x icon-contact"></i>&nbsp; &nbsp;merimabdelmoumen@gmail.com</h5>               
+                          <h5 ><i class="fas fa-phone fa-1x icon-contact"></i>&nbsp; &nbsp; +216  &nbsp; 21 38 36 18</h5>               
+                          <div class="contact-img"></div>
+
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" id="#quitter" class="btn btn-info " data-dismiss="modal">Fermer</button>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
 
 <section>
 <div class="blog">
@@ -340,7 +495,13 @@ main{
              
                   <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" data-aos="fade-right">
                        <div class="card text-center">
-                        <div class="landbot"></div>  
+                        <div class="landbot"> <div class="test"> 
+                            <div class="test-titre">LANDBOT</div><center><hr  class="line" ></center>
+                            <div class="test-date">Octobre 2018</div>
+                            <div class="test-outil">
+                                    HTML <br>CSS
+                            </div>
+                        </div></div>
                         <div class="card-block">
                              
                               <a class="btn btn-default" href="#">LANDBOT</a>
@@ -350,7 +511,13 @@ main{
                   
                   <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" data-aos="fade-up">
                        <div class="card text-center">
-                            <div class="wistia"></div>   
+                            <div class="wistia"><div class="test"> 
+                                <div class="test-titre">WISTIA</div><center><hr  class="line" ></center>
+                                <div class="test-date">Octobre 2018</div>
+                                <div class="test-outil">
+                                        HTML <br>CSS
+                                </div>
+                            </div></div>   
                         <div class="card-block">
                              
                              <a class="btn btn-default" href="#">WISTIA</a>
@@ -360,7 +527,14 @@ main{
                   
                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" data-aos="fade-left">
                        <div class="card text-center">
-                            <div class="doc"></div>   
+                            <div class="doc"><div class="test"> 
+                                <div class="test-titre">Doc Planner</div><center><hr  class="line" ></center>
+                                
+                                <div class="test-date">Octobre 2018</div>
+                                <div class="test-outil">
+                                        HTML <br>CSS
+                                </div>
+                            </div></div>   
                         <div class="card-block">
                               <h4 class="card-title"></h4>
                               <a class="btn btn-default" href="#">DOC PLANNER</a>
@@ -419,7 +593,7 @@ main{
                 </div><!-- / .caption -->
                 
                 <div class="content col-md-8">
-                        <div class="col-md-2 skill-icon"><div class="css "></div></div>
+                        <div class="col-md-2 skill-icon" data-aos="zoom-in"><div class="css "></div></div>
                         <div class="col-md-2 "></div>
                         <div class="col-md-2 skill-icon"> <div class="js "></div></div>
                         <div class="col-md-2"></div>
@@ -435,7 +609,17 @@ main{
 
 
 </main>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script src="assets/index.js"></script>
+
 
 </body>
+
+
+</html>
+
 
 
